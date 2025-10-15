@@ -1,27 +1,35 @@
-<!-- FILE: scenes/riddle.html (Bonus: form code lock) -->
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>The Riddle — Answer to Proceed</title></head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle</title>
+    <meta name="description" content="Scene in Demi's Jungle Adventure: A voice poses a riddle. 'I have cities, but no houses. What am I?'">
+</head>
 <body>
-<a href="#main-content" class="skip-link">Skip to main content</a>
-<header><h1>The Riddle</h1></header>
-<main id="main-content">
-<h2>Puzzle</h2>
-<p>A voice asks: "I shine without flame, I point without hand, I lead the lost across the land. What am I?"</p>
-<form aria-label="Riddle answers" method="get">
-<fieldset>
-<legend>Choose your answer (this acts as a simple code lock)</legend>
-<p>
-<button type="submit" formaction="../endings/victory_reunion.html">Answer: "A precious stone"</button>
-</p>
-<p>
-<button type="submit" formaction="../endings/victory_heroic.html">Answer: "A lantern"</button>
-</p>
-<p>
-<button type="submit" formaction="../endings/defeat_lost.html">Answer: "A shadow"</button>
-</p>
-</fieldset>
-</form>
-<p><a href="echo_chamber.html">Return to the echo chamber</a></p>
-</main>
+    <header>
+        <h1>The Riddle</h1>
+    </header>
+    
+    <main id="main-content">
+        <section>
+            <h2>Scene</h2>
+            <p>A voice poses a riddle. "I have cities, but no houses. What am I?"</p>
+        </section>
+        
+        <nav aria-label="riddle choices">
+            <h2>Choices</h2>
+            <ul>
+                <li><a href="cave_safe.html">Answer: "A map!" (safe path)</a></li>
+                <li><a href="echo_chamber.html">Answer: "A dream!" (echo path)</a></li>
+                <li><a href="../endings/mystery_shadow.html">Answer: "A shadow!" (mystery path)</a></li>
+            </ul>
+        </nav>
+    </main>
+    
+    <footer>
+        <p><a href="../index.html">← Back to Start</a></p>
+        <p>&copy; 2025 Demi's Jungle Adventure</p>
+    </footer>
+</body>
 </html>
